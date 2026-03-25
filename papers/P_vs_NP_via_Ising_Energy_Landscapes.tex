@@ -1,36 +1,148 @@
-\documentclass[12pt,a4paper]{article}
-\usepackage{amsmath,amssymb,amsthm,mathrsfs,bbm}
-\usepackage[margin=1in]{geometry}
-\usepackage{hyperref}
+\documentclass[11pt,a4paper]{article}
+
+% === Encoding & Fonts ===
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% === Mathematics ===
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{mathrsfs,bbm}
+
+% === Tables & Layout ===
 \usepackage{booktabs}
-\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+
+% === Graphics & Figures ===
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\graphicspath{{figures/}}
+
+% === Colours ===
 \usepackage{xcolor}
-
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{conjecture}[theorem]{Conjecture}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{remark}[theorem]{Remark}
-
+\definecolor{accent}{RGB}{18,45,82}
+\definecolor{accentlight}{RGB}{42,78,130}
+\definecolor{lightaccent}{RGB}{225,235,248}
+\definecolor{subtlegray}{RGB}{100,100,100}
+\definecolor{titlegold}{RGB}{180,155,80}
 \definecolor{proved}{rgb}{0,0.5,0}
 \definecolor{computational}{rgb}{0,0,0.7}
 \definecolor{conditional}{rgb}{0.7,0.4,0}
 \definecolor{conjectural}{rgb}{0.7,0,0}
 
-\title{\textbf{P $\neq$ NP via Ising Energy Landscape Fragmentation}\\[6pt]
-\large Exponential Basin Proliferation, Replica Symmetry Breaking,\\
-and the $\mathbb{U}_{24}$ Rigidity Framework}
-\author{
-Bryan Daugherty \quad Gregory Ward \quad Shawn Ryan\\[4pt]
-\textit{Independent Researchers}\\
-\texttt{bryan@metanation.ai}
-}
-\date{March 2026 \\ \textit{v3.1 --- Large-Scale Engine Verification ($n \leq 50{,}000$)}}
+% === Layout ===
+\usepackage{enumitem}
+\usepackage[margin=1in, top=1.2in, bottom=1.2in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{etoolbox}
 
+% === TikZ ===
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+
+% === Links ===
+\usepackage{hyperref}
+\usepackage{cleveref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accentlight,
+  citecolor=accentlight,
+  urlcolor=accentlight,
+  pdftitle={P != NP via Ising Energy Landscape Fragmentation},
+  pdfauthor={Bryan Daugherty, Gregory Ward, Shawn Ryan}
+}
+
+% === Section Styling ===
+\titleformat{\section}
+  {\Large\bfseries\color{accent}}
+  {\colorbox{accent!10}{\makebox[2em][c]{\color{accent}\thesection}}}{0.8em}{}
+  [\vspace{-4pt}\color{accent!40}\rule{\linewidth}{0.4pt}]
+
+\titleformat{\subsection}
+  {\large\bfseries\color{accentlight}}
+  {\thesubsection}{0.6em}{}
+
+% === Header / Footer ===
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{accent!40}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[L]{\small\color{subtlegray}\textsc{P $\neq$ NP via Ising Energy Landscape Fragmentation}}
+\fancyhead[R]{\small\color{subtlegray}Daugherty, Ward, Ryan $\cdot$ 2026}
+\fancyfoot[C]{\small\color{subtlegray}\thepage}
+
+% === Custom Abstract ===
+\renewenvironment{abstract}{%
+  \noindent\begin{tikzpicture}
+    \node[inner sep=12pt, fill=lightaccent!50, rounded corners=4pt,
+          draw=accent!30, line width=0.4pt,
+          text width=\dimexpr\linewidth-28pt] (absbox) \bgroup
+      \small\noindent\textbf{\color{accent}Abstract.\enspace}\ignorespaces
+}{%
+  \egroup;
+  \end{tikzpicture}\par\vspace{12pt}%
+}
+
+% === Theorem Environments ===
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+% === Math Shortcuts ===
+\newcommand{\HH}{\mathcal{H}}
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+\newcommand{\abs}[1]{\lvert #1 \rvert}
+\DeclareMathOperator{\ord}{ord}
+
+% =================================================================
 \begin{document}
-\maketitle
+\thispagestyle{empty}
+
+% === Title Page ===
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[accent] (current page.north west) rectangle
+    ([yshift=-6pt]current page.north east);
+\end{tikzpicture}
+
+\vspace*{20pt}
+\begin{center}
+
+{\fontsize{22}{26}\selectfont\bfseries\color{accent}
+P $\neq$ NP via Ising Energy Landscape Fragmentation\\[2pt]
+}
+{\large\color{accentlight}
+Exponential Basin Proliferation, Replica Symmetry Breaking,\\
+and the $\mathbb{U}_{24}$ Rigidity Framework}\\[20pt]
+
+{\color{titlegold}\rule{6cm}{0.8pt}}\\[20pt]
+
+{\Large Bryan Daugherty \quad Gregory Ward \quad Shawn Ryan}\\[8pt]
+{\small\color{subtlegray}
+Independent Researchers\\[2pt]
+\texttt{bryan@smartledger.solutions}\quad
+\texttt{greg@smartledger.solutions}\quad
+\texttt{shawn@smartledger.solutions}}\\[16pt]
+
+{\normalsize\color{subtlegray} March 2026}\\[6pt]
+{\small\color{subtlegray}\itshape v3.1\enspace---\enspace Large-Scale Engine Verification ($n \leq 50{,}000$)}
+
+\end{center}
+\vspace{16pt}
 
 \begin{abstract}
 We establish $\mathsf{P} \neq \mathsf{NP}$ conditional on a single physically-motivated assumption---\emph{Landscape Opacity} $(\mathsf{LO})$---and present three paths toward its unconditional proof. The work is supported by massive computational evidence spanning $n = 10$ to $n = 50{,}000$ variables using the Isomorphic Engine ($1.87 \times 10^9$ spins/sec, 14 parallel solvers).
@@ -88,6 +200,13 @@ Every NP-complete problem $L$ reduces in polynomial time to finding the ground s
 
 \subsection{Relation to Known Barriers}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{proof_chain.png}
+\caption{Proof architecture. Green = proved unconditionally. Blue = GPU-verified computationally (RTX 5070 Ti). Orange = conditional on the SOS conjecture. Every arrow is a rigorous theorem or verified computation.}
+\label{fig:proof_chain}
+\end{figure}
+
 Our conditional proof navigates relativisation \cite{BGS1975} (non-relativising: uses specific Cook--Levin structure), natural proofs \cite{RR1997} (basin count is \#P-hard to compute), and algebrisation \cite{AW2009} (clause structure is non-algebraic). The unconditional paths in Section~\ref{sec:paths} each offer distinct mechanisms for evading these barriers.
 
 %==============================================================================
@@ -140,6 +259,13 @@ $n$ & $\mathcal{N}_{\text{found}}$ & Restarts & Unique \% & Status \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{minima_saturation.png}
+\caption{Exponential landscape fragmentation. \textbf{Left:} Unique local minima found vs problem size (log-log). Blue = exhaustive coverage; red = fully saturated (every restart unique). The plateau at 500--1000 reflects the restart budget cap, not the true basin count. \textbf{Right:} Restart saturation fraction. At $n = 200$, 99.9\% of restarts find unique minima; at $n \geq 300$, saturation is complete.}
+\label{fig:minima}
+\end{figure}
 
 \textbf{Birthday paradox lower bound.} At $n = 200$: 2{,}996 unique minima from 3{,}000 restarts gives $\mathcal{N}_{\text{true}} \geq 2996^2 / (2 \times 4) > 1{,}122{,}000$.
 
@@ -254,6 +380,13 @@ $n$ & Gap width & Forbidden mass & $q_{\text{EA}}$ & OGP \\
 \end{tabular}
 \end{table}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{ogp_scaling_sweep.png}
+\caption{Overlap Gap Property across 5 scales ($n = 100$ to $10{,}000$, GPU-verified on RTX 5070 Ti). Each panel shows the overlap distribution $P(q)$ with the forbidden region shaded red. The forbidden mass drops from 0.05\% to \textbf{exactly 0.00\%} at $n \geq 5{,}000$. Bottom right: Edwards--Anderson parameter $q_{\text{EA}} \to 0.50$, confirming the 1-RSB glass phase.}
+\label{fig:ogp}
+\end{figure}
+
 The OGP is verified at every tested scale, with the gap width \emph{growing} from 1.40 to 1.65 as $n$ increases. At $n \geq 5{,}000$, the forbidden overlap region contains \textbf{exactly zero} probability mass---there is literally no path through intermediate overlaps. Combined with Gamarnik--Sudan's theorem, this eliminates \emph{every known class of polynomial-time optimization algorithm}.
 
 \textbf{Supporting evidence from Ding--Sly--Sun} \cite{DSS2015}: The satisfiability threshold for random $k$-SAT is determined by the 1-RSB cavity prediction, rigorously validated for large $k$. Our engine data ($q_{\text{EA}} \to 0.50$ from $n = 100$ to $n = 10{,}000$, GPU-verified on RTX 5070 Ti) confirms the landscape is in the 1-RSB glass phase where OGP provably holds.
@@ -287,6 +420,13 @@ $n$ & $q_{\text{EA}}$ & Mean overlap & $\text{Var}(q)$ & Inter-cluster $q$ \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{rsb_convergence.png}
+\caption{Replica symmetry breaking: the Edwards--Anderson parameter $q_{\text{EA}}$ converges to the theoretical 1-RSB prediction of 0.50 as $n$ increases from 100 to 10{,}000. The landscape has frozen into a spin glass phase where local minima are correlated ($q \approx 0.71$) but separated by forbidden overlap gaps.}
+\label{fig:rsb}
+\end{figure}
 
 \textbf{Key observations:}
 \begin{itemize}
@@ -339,6 +479,13 @@ $n$ & Basins & $\Omega$-product & Reeds $L^2$ & Cycle structure \\
 
 At $n = 50$: $\Omega$-products of 16 and 22 are observed, approaching but not yet reaching 24. At $n \geq 100$, the multi-flip perturbation (needed to escape deep basins at large $n$) produces hundreds of basins, complicating the convergence analysis.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{reeds_omega24.png}
+\caption{\textbf{Left:} The four attractor basins of the Reeds endomorphism on $\mathbb{Z}_{23}$: Creation (9 elements), Perception (7), Exchange (6), Stability (1). \textbf{Right:} Only the full non-polynomial Reeds table achieves $\text{ord}(f) \times |\text{basins}| = 6 \times 4 = 24 = \Omega$. The polynomial approximation $x^2 + 14x + 7 \bmod 23$ gives $3 \times 3 = 9 \neq 24$.}
+\label{fig:reeds}
+\end{figure}
+
 \textbf{Reeds non-polynomiality (verified):} The polynomial $x^2 + 14x + 7 \bmod 23$ matches the Reeds table at only 1/23 inputs (4.3\%). Its $\Omega$-product is $3 \times 3 = 9 \neq 24$. This non-polynomiality is the structural basis: if $g_{\text{macro}} \to$ Reeds, and Reeds is non-polynomial, then the landscape dynamics are non-polynomial, implying $(\mathsf{LO})$.
 
 \textbf{What would close this path:} Proving Conjecture~\ref{conj:rigidity}, i.e., that the coarse-grained landscape dynamics converges to the Reeds structure. This is the most speculative of the three paths but connects directly to the $\mathbb{U}_{24}$ universality framework underlying the Yang--Mills mass gap proof \cite{DWR_YM2026}.
@@ -375,6 +522,13 @@ $n$ & Stable $\bar{E}$ & Unstable $\bar{E}$ & Gap (\%) \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{solver_stability.png}
+\caption{Stable vs unstable solver comparison at $n = 100$ (3 instances). Green bars: input-stable solvers (SA, CIM, Kuramoto, CVTR, DMM). Red bars: input-unstable solvers (SBM, QAOA, Evolutionary, SolverMorph, GPU-SBM, etc.). The solvers interleave with no class advantage---gap $< 0.2\%$. Input-instability provides no advantage against the OGP barrier.}
+\label{fig:stability}
+\end{figure}
 
 At $n = 100$, the best stable solver (SA: $-60.81$) and best unstable solver (SolverMorph: $-60.92$) differ by $0.18\%$. The most chaotic solvers (GPU-SBM, ComplexSBM) perform \emph{no better} than smooth solvers (CIM, Kuramoto). Input-instability is computationally irrelevant.
 
@@ -431,6 +585,13 @@ Vertex Cover & \textbf{NP-c} & 0.68 & 0.98 & Fragmented \\
 
 The qualitative separation is unambiguous: P-landscapes have polynomially many basins and never saturate. NP-complete landscapes shatter into astronomically many basins, with complete restart saturation at all tested sizes.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{p_vs_npc_separation.png}
+\caption{Barrier scaling exponents for P-problems (green) vs NP-complete problems (red). P-problems have low exponents ($\alpha < 1$) and polynomial basin counts. NP-complete problems exhibit higher exponents and---crucially---complete restart saturation (not captured by $\alpha$ alone).}
+\label{fig:separation}
+\end{figure}
+
 %==============================================================================
 \section{GUE Statistics at Local Minima}
 %==============================================================================
@@ -449,6 +610,13 @@ This is consistent with the BGS conjecture \cite{BGS1984}: classical chaos in th
 %==============================================================================
 
 All computations use the \texttt{p-vs-np-engine} (19 Rust source files, GPU-accelerated via NVIDIA RTX 5070 Ti, depends on Isomorphic Engine v0.15.0 with 15 solvers including GPU-SBM). Reproducible via \texttt{cargo run --release -- verify-all --seed 42}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{verification_dashboard.png}
+\caption{Verification dashboard: all 35 automated checks pass across 7 categories (Reeds endomorphism, fragmentation, OGP, RSB, stability, P/NP-c separation, spectral/circuit). Each check corresponds to a specific claim in the paper, verified by the Isomorphic Engine.}
+\label{fig:dashboard}
+\end{figure}
 
 \subsection{Verification Dashboard: 35/35 Checks}
 
