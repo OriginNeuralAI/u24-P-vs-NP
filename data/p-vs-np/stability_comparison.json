@@ -1,0 +1,317 @@
+[
+  {
+    "n": 20,
+    "n_instances": 3,
+    "stable_mean_energy": -13.016666666666662,
+    "unstable_mean_energy": -13.26111111111111,
+    "stable_best_energy": -13.305555555555555,
+    "unstable_best_energy": -13.305555555555555,
+    "energy_gap": -0.24444444444444713,
+    "stable_solvers": [
+      "SA",
+      "Kuramoto",
+      "DMM",
+      "CIM",
+      "CVTR"
+    ],
+    "unstable_solvers": [
+      "SASSHA",
+      "LagONN",
+      "QAOA",
+      "SBM",
+      "SOLG",
+      "HDC",
+      "SolverMorph",
+      "Evolutionary",
+      "ComplexSBM",
+      "GPU-SBM"
+    ],
+    "per_solver": [
+      [
+        "SA",
+        "stable",
+        -13.305555555555555
+      ],
+      [
+        "SBM",
+        "unstable",
+        -13.305555555555555
+      ],
+      [
+        "HDC",
+        "unstable",
+        -13.305555555555555
+      ],
+      [
+        "SolverMorph",
+        "unstable",
+        -13.305555555555555
+      ],
+      [
+        "Evolutionary",
+        "unstable",
+        -13.305555555555555
+      ],
+      [
+        "GPU-SBM",
+        "unstable",
+        -13.305555555555555
+      ],
+      [
+        "SASSHA",
+        "unstable",
+        -13.305555555555552
+      ],
+      [
+        "DMM",
+        "stable",
+        -13.305555555555552
+      ],
+      [
+        "LagONN",
+        "unstable",
+        -13.194444444444443
+      ],
+      [
+        "QAOA",
+        "unstable",
+        -13.194444444444443
+      ],
+      [
+        "CIM",
+        "stable",
+        -13.194444444444443
+      ],
+      [
+        "SOLG",
+        "unstable",
+        -13.194444444444443
+      ],
+      [
+        "ComplexSBM",
+        "unstable",
+        -13.194444444444443
+      ],
+      [
+        "CVTR",
+        "stable",
+        -13.194444444444443
+      ],
+      [
+        "Kuramoto",
+        "stable",
+        -12.08333333333333
+      ]
+    ]
+  },
+  {
+    "n": 50,
+    "n_instances": 3,
+    "stable_mean_energy": -30.01666666666667,
+    "unstable_mean_energy": -29.872222222222224,
+    "stable_best_energy": -30.416666666666668,
+    "unstable_best_energy": -30.416666666666668,
+    "energy_gap": 0.1444444444444457,
+    "stable_solvers": [
+      "Kuramoto",
+      "CVTR",
+      "DMM",
+      "CIM",
+      "SA"
+    ],
+    "unstable_solvers": [
+      "QAOA",
+      "SBM",
+      "SOLG",
+      "LagONN",
+      "SolverMorph",
+      "Evolutionary",
+      "GPU-SBM",
+      "SASSHA",
+      "HDC",
+      "ComplexSBM"
+    ],
+    "per_solver": [
+      [
+        "SolverMorph",
+        "unstable",
+        -30.416666666666668
+      ],
+      [
+        "SA",
+        "stable",
+        -30.416666666666668
+      ],
+      [
+        "SASSHA",
+        "unstable",
+        -30.416666666666668
+      ],
+      [
+        "DMM",
+        "stable",
+        -30.194444444444443
+      ],
+      [
+        "SBM",
+        "unstable",
+        -30.083333333333332
+      ],
+      [
+        "SOLG",
+        "unstable",
+        -30.083333333333332
+      ],
+      [
+        "GPU-SBM",
+        "unstable",
+        -30.083333333333332
+      ],
+      [
+        "HDC",
+        "unstable",
+        -30.083333333333332
+      ],
+      [
+        "QAOA",
+        "unstable",
+        -29.972222222222218
+      ],
+      [
+        "LagONN",
+        "unstable",
+        -29.972222222222218
+      ],
+      [
+        "CVTR",
+        "stable",
+        -29.86111111111111
+      ],
+      [
+        "Evolutionary",
+        "unstable",
+        -29.86111111111111
+      ],
+      [
+        "CIM",
+        "stable",
+        -29.86111111111111
+      ],
+      [
+        "Kuramoto",
+        "stable",
+        -29.75
+      ],
+      [
+        "ComplexSBM",
+        "unstable",
+        -27.749999999999996
+      ]
+    ]
+  },
+  {
+    "n": 100,
+    "n_instances": 3,
+    "stable_mean_energy": -59.69444444444444,
+    "unstable_mean_energy": -59.59444444444445,
+    "stable_best_energy": -60.805555555555564,
+    "unstable_best_energy": -60.916666666666664,
+    "energy_gap": 0.09999999999999432,
+    "stable_solvers": [
+      "Kuramoto",
+      "CVTR",
+      "DMM",
+      "SA",
+      "CIM"
+    ],
+    "unstable_solvers": [
+      "SBM",
+      "SOLG",
+      "SolverMorph",
+      "GPU-SBM",
+      "QAOA",
+      "LagONN",
+      "SASSHA",
+      "ComplexSBM",
+      "Evolutionary",
+      "HDC"
+    ],
+    "per_solver": [
+      [
+        "SolverMorph",
+        "unstable",
+        -60.916666666666664
+      ],
+      [
+        "SA",
+        "stable",
+        -60.805555555555564
+      ],
+      [
+        "SASSHA",
+        "unstable",
+        -60.25
+      ],
+      [
+        "SOLG",
+        "unstable",
+        -59.916666666666664
+      ],
+      [
+        "CIM",
+        "stable",
+        -59.916666666666664
+      ],
+      [
+        "SBM",
+        "unstable",
+        -59.91666666666666
+      ],
+      [
+        "CVTR",
+        "stable",
+        -59.805555555555564
+      ],
+      [
+        "QAOA",
+        "unstable",
+        -59.69444444444445
+      ],
+      [
+        "LagONN",
+        "unstable",
+        -59.694444444444436
+      ],
+      [
+        "HDC",
+        "unstable",
+        -59.694444444444436
+      ],
+      [
+        "Evolutionary",
+        "unstable",
+        -59.583333333333336
+      ],
+      [
+        "GPU-SBM",
+        "unstable",
+        -59.13888888888889
+      ],
+      [
+        "DMM",
+        "stable",
+        -59.13888888888888
+      ],
+      [
+        "Kuramoto",
+        "stable",
+        -58.805555555555564
+      ],
+      [
+        "ComplexSBM",
+        "unstable",
+        -57.138888888888886
+      ]
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "U₂₄ P vs NP: Ising Energy Landscape Fragmentation, OGP, and the SOS Conjecture"
+authors:
+  - family-names: Daugherty
+    given-names: Bryan
+    email: bryan@metanation.ai
+  - family-names: Ward
+    given-names: Gregory
+  - family-names: Ryan
+    given-names: Shawn
+date-released: "2026-03-25"
+version: "4.0"
+repository-code: "https://github.com/OriginNeuralAI/u24-P-vs-NP"
+keywords:
+  - P-vs-NP
+  - Ising-model
+  - QUBO
+  - overlap-gap-property
+  - replica-symmetry-breaking
+  - SOS-conjecture
+  - computational-complexity
+  - universality-constant
+  - energy-landscape
+license: LicenseRef-Proprietary

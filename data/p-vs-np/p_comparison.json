@@ -1,0 +1,20 @@
+{
+  "p_problems": [
+    {
+      "name": "2-SAT (r=0.8)",
+      "alpha": 0.10392129884656456,
+      "alpha_stderr": 0.32260778365847087,
+      "r_squared": 0.094011725932865,
+      "n_sizes": 3
+    },
+    {
+      "name": "Max-Cut (tree)",
+      "alpha": 0.9814978954735787,
+      "alpha_stderr": 0.10054096302067948,
+      "r_squared": 0.989615778407442,
+      "n_sizes": 3
+    }
+  ],
+  "p_alpha_mean": 0.5427095971600716,
+  "all_below_2": true
+}
