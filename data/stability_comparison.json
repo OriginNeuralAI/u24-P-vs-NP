@@ -1,0 +1,317 @@
+[
+  {
+    "n": 20,
+    "n_instances": 3,
+    "stable_mean_energy": -13.016666666666662,
+    "unstable_mean_energy": -13.26111111111111,
+    "stable_best_energy": -13.305555555555555,
+    "unstable_best_energy": -13.305555555555555,
+    "energy_gap": -0.24444444444444713,
+    "stable_solvers": [
+      "stable_solver_1",
+      "stable_solver_3",
+      "stable_solver_5",
+      "stable_solver_2",
+      "stable_solver_4"
+    ],
+    "unstable_solvers": [
+      "unstable_solver_6",
+      "unstable_solver_9",
+      "unstable_solver_3",
+      "unstable_solver_1",
+      "unstable_solver_8",
+      "unstable_solver_7",
+      "unstable_solver_5",
+      "unstable_solver_4",
+      "unstable_solver_2",
+      "unstable_solver_10"
+    ],
+    "per_solver": [
+      [
+        "stable_solver_1",
+        "stable",
+        -13.305555555555555
+      ],
+      [
+        "unstable_solver_1",
+        "unstable",
+        -13.305555555555555
+      ],
+      [
+        "unstable_solver_7",
+        "unstable",
+        -13.305555555555555
+      ],
+      [
+        "unstable_solver_5",
+        "unstable",
+        -13.305555555555555
+      ],
+      [
+        "unstable_solver_4",
+        "unstable",
+        -13.305555555555555
+      ],
+      [
+        "unstable_solver_10",
+        "unstable",
+        -13.305555555555555
+      ],
+      [
+        "unstable_solver_6",
+        "unstable",
+        -13.305555555555552
+      ],
+      [
+        "stable_solver_5",
+        "stable",
+        -13.305555555555552
+      ],
+      [
+        "unstable_solver_9",
+        "unstable",
+        -13.194444444444443
+      ],
+      [
+        "unstable_solver_3",
+        "unstable",
+        -13.194444444444443
+      ],
+      [
+        "stable_solver_2",
+        "stable",
+        -13.194444444444443
+      ],
+      [
+        "unstable_solver_8",
+        "unstable",
+        -13.194444444444443
+      ],
+      [
+        "unstable_solver_2",
+        "unstable",
+        -13.194444444444443
+      ],
+      [
+        "stable_solver_4",
+        "stable",
+        -13.194444444444443
+      ],
+      [
+        "stable_solver_3",
+        "stable",
+        -12.08333333333333
+      ]
+    ]
+  },
+  {
+    "n": 50,
+    "n_instances": 3,
+    "stable_mean_energy": -30.01666666666667,
+    "unstable_mean_energy": -29.872222222222224,
+    "stable_best_energy": -30.416666666666668,
+    "unstable_best_energy": -30.416666666666668,
+    "energy_gap": 0.1444444444444457,
+    "stable_solvers": [
+      "stable_solver_3",
+      "stable_solver_4",
+      "stable_solver_5",
+      "stable_solver_2",
+      "stable_solver_1"
+    ],
+    "unstable_solvers": [
+      "unstable_solver_3",
+      "unstable_solver_1",
+      "unstable_solver_8",
+      "unstable_solver_9",
+      "unstable_solver_5",
+      "unstable_solver_4",
+      "unstable_solver_10",
+      "unstable_solver_6",
+      "unstable_solver_7",
+      "unstable_solver_2"
+    ],
+    "per_solver": [
+      [
+        "unstable_solver_5",
+        "unstable",
+        -30.416666666666668
+      ],
+      [
+        "stable_solver_1",
+        "stable",
+        -30.416666666666668
+      ],
+      [
+        "unstable_solver_6",
+        "unstable",
+        -30.416666666666668
+      ],
+      [
+        "stable_solver_5",
+        "stable",
+        -30.194444444444443
+      ],
+      [
+        "unstable_solver_1",
+        "unstable",
+        -30.083333333333332
+      ],
+      [
+        "unstable_solver_8",
+        "unstable",
+        -30.083333333333332
+      ],
+      [
+        "unstable_solver_10",
+        "unstable",
+        -30.083333333333332
+      ],
+      [
+        "unstable_solver_7",
+        "unstable",
+        -30.083333333333332
+      ],
+      [
+        "unstable_solver_3",
+        "unstable",
+        -29.972222222222218
+      ],
+      [
+        "unstable_solver_9",
+        "unstable",
+        -29.972222222222218
+      ],
+      [
+        "stable_solver_4",
+        "stable",
+        -29.86111111111111
+      ],
+      [
+        "unstable_solver_4",
+        "unstable",
+        -29.86111111111111
+      ],
+      [
+        "stable_solver_2",
+        "stable",
+        -29.86111111111111
+      ],
+      [
+        "stable_solver_3",
+        "stable",
+        -29.75
+      ],
+      [
+        "unstable_solver_2",
+        "unstable",
+        -27.749999999999996
+      ]
+    ]
+  },
+  {
+    "n": 100,
+    "n_instances": 3,
+    "stable_mean_energy": -59.69444444444444,
+    "unstable_mean_energy": -59.59444444444445,
+    "stable_best_energy": -60.805555555555564,
+    "unstable_best_energy": -60.916666666666664,
+    "energy_gap": 0.09999999999999432,
+    "stable_solvers": [
+      "stable_solver_3",
+      "stable_solver_4",
+      "stable_solver_5",
+      "stable_solver_1",
+      "stable_solver_2"
+    ],
+    "unstable_solvers": [
+      "unstable_solver_1",
+      "unstable_solver_8",
+      "unstable_solver_5",
+      "unstable_solver_10",
+      "unstable_solver_3",
+      "unstable_solver_9",
+      "unstable_solver_6",
+      "unstable_solver_2",
+      "unstable_solver_4",
+      "unstable_solver_7"
+    ],
+    "per_solver": [
+      [
+        "unstable_solver_5",
+        "unstable",
+        -60.916666666666664
+      ],
+      [
+        "stable_solver_1",
+        "stable",
+        -60.805555555555564
+      ],
+      [
+        "unstable_solver_6",
+        "unstable",
+        -60.25
+      ],
+      [
+        "unstable_solver_8",
+        "unstable",
+        -59.916666666666664
+      ],
+      [
+        "stable_solver_2",
+        "stable",
+        -59.916666666666664
+      ],
+      [
+        "unstable_solver_1",
+        "unstable",
+        -59.91666666666666
+      ],
+      [
+        "stable_solver_4",
+        "stable",
+        -59.805555555555564
+      ],
+      [
+        "unstable_solver_3",
+        "unstable",
+        -59.69444444444445
+      ],
+      [
+        "unstable_solver_9",
+        "unstable",
+        -59.694444444444436
+      ],
+      [
+        "unstable_solver_7",
+        "unstable",
+        -59.694444444444436
+      ],
+      [
+        "unstable_solver_4",
+        "unstable",
+        -59.583333333333336
+      ],
+      [
+        "unstable_solver_10",
+        "unstable",
+        -59.13888888888889
+      ],
+      [
+        "stable_solver_5",
+        "stable",
+        -59.13888888888888
+      ],
+      [
+        "stable_solver_3",
+        "stable",
+        -58.805555555555564
+      ],
+      [
+        "unstable_solver_2",
+        "unstable",
+        -57.138888888888886
+      ]
+    ]
+  }
+]

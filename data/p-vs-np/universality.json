@@ -1,0 +1,49 @@
+{
+  "problems": [
+    {
+      "name": "3-SAT (r=4.267)",
+      "alpha": 0.5431711683913996,
+      "alpha_stderr": 0.7788049730983968,
+      "r_squared": 0.19563231925323255,
+      "n_sizes": 4
+    },
+    {
+      "name": "4-SAT (r=9.931)",
+      "alpha": -0.1374057365584846,
+      "alpha_stderr": 0.293194228009409,
+      "r_squared": 0.09895040919629117,
+      "n_sizes": 4
+    },
+    {
+      "name": "5-SAT (r=21.117)",
+      "alpha": -0.45970593085328915,
+      "alpha_stderr": 0.6432613610367147,
+      "r_squared": 0.20341665529855157,
+      "n_sizes": 4
+    },
+    {
+      "name": "Max-Cut (ER p=0.5)",
+      "alpha": 1.3913377821644337,
+      "alpha_stderr": 0.11652241983899002,
+      "r_squared": 0.9861664371881053,
+      "n_sizes": 4
+    },
+    {
+      "name": "Graph 3-Coloring",
+      "alpha": 0.8701750636193226,
+      "alpha_stderr": 0.12729368154169504,
+      "r_squared": 0.9589578646803626,
+      "n_sizes": 4
+    },
+    {
+      "name": "Vertex Cover",
+      "alpha": 0.6802255902159883,
+      "alpha_stderr": 0.07290135198406605,
+      "r_squared": 0.9775440433030838,
+      "n_sizes": 4
+    }
+  ],
+  "alpha_mean": 0.4812996561632284,
+  "alpha_std": 0.6769166805956731,
+  "all_above_2": false
+}

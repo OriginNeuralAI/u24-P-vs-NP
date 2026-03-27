@@ -1,0 +1,161 @@
+{
+  "results": [
+    [
+      100,
+      [
+        {
+          "n": 100,
+          "n_ising_spins": 100,
+          "ground_state_energy": -59.250000000000014,
+          "steps_to_ground": 0,
+          "solver_used": "CSR",
+          "ground_state_entropy": 97.0,
+          "decision_tree_depth": 97,
+          "effective_depth_ratio": 0.0,
+          "is_satisfiable": true
+        },
+        {
+          "n": 100,
+          "n_ising_spins": 100,
+          "ground_state_energy": -54.58333333333334,
+          "steps_to_ground": 0,
+          "solver_used": "CSR",
+          "ground_state_entropy": 96.0,
+          "decision_tree_depth": 96,
+          "effective_depth_ratio": 0.0,
+          "is_satisfiable": true
+        }
+      ]
+    ],
+    [
+      500,
+      [
+        {
+          "n": 500,
+          "n_ising_spins": 500,
+          "ground_state_energy": -297.5000000000001,
+          "steps_to_ground": 1680,
+          "solver_used": "CVTR",
+          "ground_state_entropy": 473.0,
+          "decision_tree_depth": 473,
+          "effective_depth_ratio": 3.36,
+          "is_satisfiable": true
+        },
+        {
+          "n": 500,
+          "n_ising_spins": 500,
+          "ground_state_energy": -304.50000000000017,
+          "steps_to_ground": 1680,
+          "solver_used": "CVTR",
+          "ground_state_entropy": 481.0,
+          "decision_tree_depth": 481,
+          "effective_depth_ratio": 3.36,
+          "is_satisfiable": true
+        }
+      ]
+    ],
+    [
+      1000,
+      [
+        {
+          "n": 1000,
+          "n_ising_spins": 1000,
+          "ground_state_energy": -624.5833333333333,
+          "steps_to_ground": 0,
+          "solver_used": "CSR",
+          "ground_state_entropy": 946.0,
+          "decision_tree_depth": 946,
+          "effective_depth_ratio": 0.0,
+          "is_satisfiable": true
+        },
+        {
+          "n": 1000,
+          "n_ising_spins": 1000,
+          "ground_state_energy": -615.5833333333335,
+          "steps_to_ground": 0,
+          "solver_used": "CSR",
+          "ground_state_entropy": 960.0,
+          "decision_tree_depth": 960,
+          "effective_depth_ratio": 0.0,
+          "is_satisfiable": true
+        }
+      ]
+    ],
+    [
+      2000,
+      [
+        {
+          "n": 2000,
+          "n_ising_spins": 2000,
+          "ground_state_energy": -1223.4999999999995,
+          "steps_to_ground": 336,
+          "solver_used": "CVTR",
+          "ground_state_entropy": 1898.0,
+          "decision_tree_depth": 1898,
+          "effective_depth_ratio": 0.168,
+          "is_satisfiable": true
+        },
+        {
+          "n": 2000,
+          "n_ising_spins": 2000,
+          "ground_state_energy": -1231.833333333334,
+          "steps_to_ground": 0,
+          "solver_used": "CSR",
+          "ground_state_entropy": 1897.0,
+          "decision_tree_depth": 1897,
+          "effective_depth_ratio": 0.0,
+          "is_satisfiable": true
+        }
+      ]
+    ],
+    [
+      5000,
+      [
+        {
+          "n": 5000,
+          "n_ising_spins": 5000,
+          "ground_state_energy": -3088.9166666666706,
+          "steps_to_ground": 0,
+          "solver_used": "CSR",
+          "ground_state_entropy": 4765.0,
+          "decision_tree_depth": 4765,
+          "effective_depth_ratio": 0.0,
+          "is_satisfiable": true
+        },
+        {
+          "n": 5000,
+          "n_ising_spins": 5000,
+          "ground_state_energy": -3063.5833333333344,
+          "steps_to_ground": 0,
+          "solver_used": "CSR",
+          "ground_state_entropy": 4796.0,
+          "decision_tree_depth": 4796,
+          "effective_depth_ratio": 0.0,
+          "is_satisfiable": true
+        }
+      ]
+    ]
+  ],
+  "depth_scaling": [
+    [
+      100.0,
+      0.0
+    ],
+    [
+      500.0,
+      3.36
+    ],
+    [
+      1000.0,
+      0.0
+    ],
+    [
+      2000.0,
+      0.084
+    ],
+    [
+      5000.0,
+      0.0
+    ]
+  ]
+}

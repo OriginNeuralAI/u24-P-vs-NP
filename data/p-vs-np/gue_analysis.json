@@ -1,0 +1,68 @@
+{
+  "n_spins": 16,
+  "n_minima_analyzed": 10,
+  "mean_ks_distance": 0.16380382303865743,
+  "mean_p_value": 0.770361636492508,
+  "per_minimum": [
+    {
+      "minimum_energy": -8.333333333333334,
+      "ks_distance": 0.19774078069505363,
+      "wigner_p_value": 0.55198486617625,
+      "n_eigenvalues": 16
+    },
+    {
+      "minimum_energy": -8.0,
+      "ks_distance": 0.13656235209976508,
+      "wigner_p_value": 0.9236481158195382,
+      "n_eigenvalues": 16
+    },
+    {
+      "minimum_energy": -8.0,
+      "ks_distance": 0.14794480374624475,
+      "wigner_p_value": 0.8709070745959938,
+      "n_eigenvalues": 16
+    },
+    {
+      "minimum_energy": -7.999999999999999,
+      "ks_distance": 0.17144547850560005,
+      "wigner_p_value": 0.728721701448393,
+      "n_eigenvalues": 16
+    },
+    {
+      "minimum_energy": -7.999999999999998,
+      "ks_distance": 0.1601979978048783,
+      "wigner_p_value": 0.8009095980217341,
+      "n_eigenvalues": 16
+    },
+    {
+      "minimum_energy": -7.333333333333332,
+      "ks_distance": 0.15635623445933416,
+      "wigner_p_value": 0.8240573079578639,
+      "n_eigenvalues": 16
+    },
+    {
+      "minimum_energy": -7.0,
+      "ks_distance": 0.18031942225532638,
+      "wigner_p_value": 0.6690895901800906,
+      "n_eigenvalues": 16
+    },
+    {
+      "minimum_energy": -7.0,
+      "ks_distance": 0.1656268871452754,
+      "wigner_p_value": 0.7667496389021923,
+      "n_eigenvalues": 16
+    },
+    {
+      "minimum_energy": -7.0,
+      "ks_distance": 0.13984105870098507,
+      "wigner_p_value": 0.9098748737086331,
+      "n_eigenvalues": 16
+    },
+    {
+      "minimum_energy": -7.0,
+      "ks_distance": 0.18200321497411154,
+      "wigner_p_value": 0.6576735981143897,
+      "n_eigenvalues": 16
+    }
+  ]
+}
