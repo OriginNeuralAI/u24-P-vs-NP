@@ -260,7 +260,7 @@ This work is part of the **U₂₄ universality programme** — a unified mathem
 - The **Reeds endomorphism** (Ω = 24) originates in the [Spectral Operator](https://github.com/OriginNeuralAI/u24-spectral-operator) and is verified here for NP-complete landscapes
 - The **BGS conjecture** is verified in [Yang-Mills](https://github.com/OriginNeuralAI/u24-Yang-Mills) (KS = 0.136) and applied here to GUE statistics at local minima (KS = 0.164)
 - The **barrier scaling** mechanism (B(L) ~ L^α) parallels [Yang-Mills confinement](https://github.com/OriginNeuralAI/u24-Yang-Mills) (α = 3.09 for SU(3))
-- All three proofs share the **Isomorphic Engine** (, 1.87 × 10⁹ spins/sec, 15 solvers + GPU)
+- All three proofs share the **Isomorphic Engine** (v0.15.0, peak 9.52 × 10⁹ spins/sec on RTX 6000 Ada GPU-SBM, 16 solvers + GPU)
 
 ## Supporting Literature
 
