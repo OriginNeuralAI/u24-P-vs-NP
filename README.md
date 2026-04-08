@@ -84,6 +84,8 @@
 
 ---
 
+> **Caveats:** The proof is **conditional on the SOS conjecture** — a standard assumption in complexity theory, proved for planted clique and random CSP, but not yet for general 3-SAT. The OGP at 0.00% forbidden mass is GPU-verified to n=10,000; extrapolation to arbitrary n is theoretical. Dense matrix encoding caps GPU at n ≈ 20,000. See [FAQ](https://github.com/OriginNeuralAI/u24-spectral-operator/blob/main/FAQ.md).
+
 ## Key Result
 
 We prove **P ≠ NP** conditional on the **SOS conjecture** — a standard assumption in computational complexity (proven for planted clique, densest k-subgraph, random CSP refutation). The proof chain:
